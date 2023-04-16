@@ -63,12 +63,11 @@ public class ListProgram {
     public static void menuOptions() {
         System.out.println("_______________________________________________");
         System.out.println("1)Palindromo");
-        System.out.println("2)estudiantes repetidos");
-        System.out.println("3)orden alfabetico");
-        System.out.println("4)Buscar");
-        System.out.println("5)Remover y editar");
-        System.out.println("6)Añadir estudiantes");
-        System.out.println("7)Ver lista de estudiantes");
+        System.out.println("2)Orden alfabetico");
+        System.out.println("3)Buscar estudiante");
+        System.out.println("4)Remover y editar");
+        System.out.println("5)Añadir estudiantes");
+        System.out.println("6)Ver lista de estudiantes");
         System.out.println("_______________________________________________");
     }
 
@@ -102,11 +101,8 @@ public class ListProgram {
 
                     break;
 
+
                 case 2:
-
-                    break;
-
-                case 3:
                     System.out.println("_______________________________________________");
                     System.out.println("En orden alfabetico ");
                     LinkedList<ListStudents> data = listProcedures.orderData(students);
@@ -117,13 +113,13 @@ public class ListProgram {
                     }
                     break;
 
-                case 4:
+                case 3:
                     System.out.println("Digite por medio de carnet al estudiante que decea buscar");
                     listProcedures.searchCard(insertString());
 
                     break;
 
-                case 5:
+                case 4:
 
                     menuCrud();
                     switch (insertNum()) {
@@ -144,7 +140,7 @@ break;
 
                     break;
 
-                case 6:
+                case 5:
                     System.out.println("Digite una opcion");
                     System.out.println("1)Añadir primero");
                     System.out.println("2)Añadir ultimo");
@@ -168,7 +164,7 @@ break;
 
                     }
 
-                case 7:
+                case 6:
                     System.out.println("Lista de estudiantes");
                     listProcedures.seeStudents();
 
